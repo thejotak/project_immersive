@@ -5,6 +5,7 @@ public class PointsManager : MonoBehaviour
     public int playerAPoints = 0;
     public int playerBPoints = 0;
 
+    [SerializeField] PopupController popupController;
 
 
     // Update is called once per frame
@@ -62,12 +63,17 @@ public class PointsManager : MonoBehaviour
             playerAPoints += points;
             print($"{points} points were added to player {player}");
             print($"player {player} now has {playerAPoints} points");
+
+            popupController.addPoints(points);
         }
         else if (player == "B")
         {
             playerBPoints += points;
             print($"{points} points were added to player {player}");
             print($"player {player} now has {playerBPoints} points");
+
+            popupController.addPoints(points);
+
         }
     }
 

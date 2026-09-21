@@ -9,6 +9,11 @@ public class PopupController : MonoBehaviour
 
     public void addPoints(int ptAmount)
     {
+        // quick fix
+        ptAmount /= 10;
+        ptAmount -= 1;
+
+
         for (int i = 0; i<popupMaterials.Count; i++)
         {
             if (i == ptAmount)
