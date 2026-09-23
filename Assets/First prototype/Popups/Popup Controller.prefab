@@ -50,3 +50,5 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 54425370c9945d04588c5cdd30cee9a3, type: 2}
   popupPrefab: {fileID: 5096970924948647696, guid: e600630098f98bc458d6475f934d0c30, type: 3}
   lifeSpan: 2
+  posA: {x: 11, y: 0}
+  posB: {x: -11, y: 0}
