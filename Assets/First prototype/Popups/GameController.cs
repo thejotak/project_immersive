@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            popupController.addPoints(1);
+            //popupController.addPoints(1);
             Debug.Log("space down");
         }
     }
