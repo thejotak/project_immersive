@@ -7,7 +7,7 @@ public class PopupObject : MonoBehaviour
     [SerializeField] Vector3 moveDir;
     void Start()
     {
-        this.transform.position = startPos;
+        
     }
 
     void Update()

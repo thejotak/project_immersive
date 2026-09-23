@@ -32,7 +32,7 @@ public class PopupController : MonoBehaviour
     {
         popupMat.SetFloat("_CurrentTime", Time.time);
         GameObject popup = Instantiate(popupPrefab, pos, Quaternion.identity);
-        print(popup.transform.position);
+        Debug.Log(popup.transform.position);
 
         popup.GetComponent<MeshRenderer>().material = popupMat;
         Destroy(popup, lifeSpan);
