@@ -5,9 +5,6 @@ public class PointsManager : MonoBehaviour
     public int playerAPoints = 0;
     public int playerBPoints = 0;
 
-
-
-    // Update is called once per frame
     void Update()
     {
         DebugPointsInput();
