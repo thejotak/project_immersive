@@ -6,7 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/First prototype/FirstPrototype.unity
+    path: Assets/First prototype/Scenes/TitleScreen.unity
+    guid: d1064ed747a816e45b1ec6704f8d8c1e
+  - enabled: 1
+    path: Assets/First prototype/Scenes/IntroVideo.unity
+    guid: 681d3adb1987e8948bac0a8f327ebec7
+  - enabled: 1
+    path: Assets/First prototype/Scenes/FirstPrototype.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/First prototype/Scenes/VictoryScreen.unity
+    guid: c0cbcdc5cb8f32e41b1a71f300a10d79
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
