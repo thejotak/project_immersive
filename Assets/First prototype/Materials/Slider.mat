@@ -52,17 +52,23 @@ Material:
     m_Ints: []
     m_Floats:
     - _CorrectionFloat: 45.9
-    - _Distribution: 0.143
+    - _Distribution: -0.387
+    - _Effect_Falloff: 2.08
+    - _Effect_Strength: 0.91
     - _Effect_Thickness: 9.46
     - _Float: 0
-    - _Glow_Falloff: 28.2
-    - _Glow_Grow_Speed_Modifier: 97.29
+    - _Glow_Falloff: 22.6
+    - _Glow_Grow_Speed_Modifier: 1035.8
+    - _Glow_Strength: 9.06
+    - _Heart_Amount: 8.7
+    - _Heart_Ripple_Amount: -0.42
     - _Max_Glow_Falloff: -236.9
     - _QueueControl: 0
     - _QueueOffset: 0
     - _cell_density: 10.59
     m_Colors:
-    - _Color_1: {r: 0.3915094, g: 0.4396915, b: 1, a: 1}
-    - _Color_2: {r: 0.6698113, g: 0.16113384, b: 0.3783323, a: 1}
+    - _Color_1: {r: 0.1512549, g: 0.21477292, b: 0.9716981, a: 1}
+    - _Color_2: {r: 0.7924528, g: 0.078497685, b: 0.2521465, a: 1}
+    - _UV_scaling: {r: 5.54, g: 0.25, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
