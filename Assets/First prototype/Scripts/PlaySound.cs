@@ -20,6 +20,7 @@ public class PlaySound : MonoBehaviour
     public AudioClip Singgood;
     public AudioClip Singgoodgood;
     public AudioClip Singgoodbad;
+    public AudioClip Singbad;
     public AudioClip Singbadgood;
     public AudioClip Singbadbad;
     public AudioClip nostop1;
@@ -28,7 +29,9 @@ public class PlaySound : MonoBehaviour
     public AudioClip Nofight;
     public AudioClip Catcall1;
     public AudioClip Catcall2;
-  
+    public AudioClip Catcall3;
+    public AudioClip Catcall4;
+
 
     // Update is called once per frame
     void Update()
@@ -71,6 +74,16 @@ public class PlaySound : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             BirdSource.PlayOneShot(Catcall2);
+
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            BirdSource.PlayOneShot(Catcall3);
+
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            BirdSource.PlayOneShot(Catcall4);
 
         }
 
@@ -129,6 +142,11 @@ public class PlaySound : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             BirdSource.PlayOneShot(Singgoodgood);
+
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            BirdSource.PlayOneShot(Singbad);
 
         }
         if (Input.GetKeyDown(KeyCode.K))

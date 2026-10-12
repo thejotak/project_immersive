@@ -830,26 +830,29 @@ MonoBehaviour:
   musicSource: {fileID: 173288350}
   SFXSource: {fileID: 2383635}
   BirdSource: {fileID: 1153225694}
-  Intro: {fileID: 8300000, guid: dc04a68fd043a2d4cb114059dcb67841, type: 3}
-  Goodflap: {fileID: 8300000, guid: 2377ac038b6b90f44a49b64005120ca4, type: 3}
-  Badflap1: {fileID: 8300000, guid: 49558e63d2d77e0469b4d96387ea81c7, type: 3}
-  Badflap2: {fileID: 8300000, guid: 66acd6242bd500642b01877007d0c689, type: 3}
-  Badflap3: {fileID: 8300000, guid: 70353b8c127e2a54487e2a76b2826313, type: 3}
-  Flamingofetisch: {fileID: 8300000, guid: 8629152ddfb61904bbb56b879fb2b142, type: 3}
-  Goodflamingo: {fileID: 8300000, guid: ee840ad7523ecd14d92a2a9741a940f0, type: 3}
-  Badflamingo: {fileID: 8300000, guid: 5ccac714875a5d944935cf260f66b04e, type: 3}
-  Sing4baby: {fileID: 8300000, guid: 3ddc83cabb774844c922eda3adedda46, type: 3}
-  Singgood: {fileID: 8300000, guid: 2eed103d1c4b9b8408d881ad7a53add7, type: 3}
-  Singgoodgood: {fileID: 8300000, guid: 725c4ff977eec0b4b956077a7e67a2cb, type: 3}
-  Singgoodbad: {fileID: 8300000, guid: e3d5d4a8795f47142997704366e8095f, type: 3}
-  Singbadgood: {fileID: 8300000, guid: e3d5d4a8795f47142997704366e8095f, type: 3}
-  Singbadbad: {fileID: 8300000, guid: 43eea46418e61074f883e772b236ba9a, type: 3}
-  nostop1: {fileID: 8300000, guid: d93680591dee26842847aee22035ca90, type: 3}
-  nostop2: {fileID: 8300000, guid: e3b0b10b79713bd459505d14be2b791a, type: 3}
-  Fight: {fileID: 8300000, guid: d8aa38f176671a94e822f979425bf2e2, type: 3}
-  Nofight: {fileID: 8300000, guid: 240a81ad264510c4196500439f0d8170, type: 3}
-  Catcall1: {fileID: 8300000, guid: 9688f9f17a7eee6449b9dbc2c4f6488b, type: 3}
-  Catcall2: {fileID: 8300000, guid: 509f2b92bf889284f8fcaaf4791c3fff, type: 3}
+  Intro: {fileID: 8300000, guid: b8283bc8fd53e454bad3fbde273aa98b, type: 3}
+  Goodflap: {fileID: 8300000, guid: 89a502b3577eabf4fa6f30406364bec0, type: 3}
+  Badflap1: {fileID: 8300000, guid: a4d1e7511178e504fbedc06294c2c947, type: 3}
+  Badflap2: {fileID: 8300000, guid: 428dfa39d97ef224aaa58a4f0bda4c6a, type: 3}
+  Badflap3: {fileID: 8300000, guid: 6e7f5335c5aab32488cd8c51b4322811, type: 3}
+  Flamingofetisch: {fileID: 8300000, guid: 42b90ba8c8ebe684da7bda7d05d59b1a, type: 3}
+  Goodflamingo: {fileID: 8300000, guid: 269a6da59f8fe9d4795f21a8cf64a837, type: 3}
+  Badflamingo: {fileID: 8300000, guid: 2c82e67efa8a77e4ab49bf70ff21a398, type: 3}
+  Sing4baby: {fileID: 8300000, guid: 2ca3ab46a3e9aad4793fdadf934f31ed, type: 3}
+  Singgood: {fileID: 8300000, guid: 7639225dd70d4c04097a48c4f696918f, type: 3}
+  Singgoodgood: {fileID: 8300000, guid: c8b0b9c96920c424b8fb6c0455aaf485, type: 3}
+  Singgoodbad: {fileID: 8300000, guid: 754019f6cb113a94ba1f27e0ed8cbd06, type: 3}
+  Singbad: {fileID: 8300000, guid: a11e4a3c304e148438dbcaf5e6d8101b, type: 3}
+  Singbadgood: {fileID: 8300000, guid: d9b2a90a3141b05469a021910f9f3a4e, type: 3}
+  Singbadbad: {fileID: 8300000, guid: c15019181f8452a4a8083aa26405056f, type: 3}
+  nostop1: {fileID: 8300000, guid: 3b542a4b90cbe9948b5a3c5a2b0fdd3d, type: 3}
+  nostop2: {fileID: 8300000, guid: 60412b57b39d8154ab04eeb0154dc823, type: 3}
+  Fight: {fileID: 8300000, guid: 8e8c5800bb0f4f744b798cd7d8dd7554, type: 3}
+  Nofight: {fileID: 8300000, guid: 38555d3137cf79d47aadb7932a416fe0, type: 3}
+  Catcall1: {fileID: 8300000, guid: 087e8c7bf945f2b438de388259bbfd48, type: 3}
+  Catcall2: {fileID: 8300000, guid: 1971c010ae51a6e40a879e0a3c1ff8c2, type: 3}
+  Catcall3: {fileID: 8300000, guid: e2b588996518f744e87015a855d05e20, type: 3}
+  Catcall4: {fileID: 8300000, guid: abd27fd7dfc7bde44b5e00183f5b5fd2, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
