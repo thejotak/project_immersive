@@ -9,6 +9,13 @@ public class ProgressionBarManager : MonoBehaviour
     [SerializeField] private int maxScore;
     private float a0;
     private float b0;
+    public GameObject SadBlueBird;
+    public GameObject SadRedBird;
+    public GameObject NeutralBlueBird;
+    public GameObject NeutralRedBird;
+    public GameObject NeutralLoveBird;
+    public GameObject LeftLoveBird;
+    public GameObject RightLoveBird;
     public void Start()
     {
         sliderMat.SetFloat(sliderDistributionFloatName, 0f);
@@ -17,6 +24,18 @@ public class ProgressionBarManager : MonoBehaviour
         b0 = 0;
         pointsManager.playerAPointsChanged += updateProgressionBar;
         pointsManager.playerBPointsChanged += updateProgressionBar;
+
+       
+        NeutralBlueBird.SetActive(true);
+        NeutralRedBird.SetActive(true);
+        NeutralLoveBird.SetActive(true);
+
+        SadBlueBird.SetActive(false);
+        SadRedBird.SetActive(false);
+        LeftLoveBird.SetActive(false);
+        RightLoveBird.SetActive(false);
+
+
     }
 
     private float distribution0;
@@ -31,6 +50,42 @@ public class ProgressionBarManager : MonoBehaviour
         a0 = a;
         b0 = b;
         distribution0 = distribution;
+
+        if (distribution >= 0.2f)
+
+            {
+                Debug.Log("Bluebird is sad");
+                
+                NeutralBlueBird.SetActive(false);
+                SadBlueBird.SetActive(true);
+                NeutralRedBird.SetActive(true);
+                SadRedBird.SetActive(false);
+                NeutralLoveBird.SetActive(false);
+                LeftLoveBird.SetActive(false);
+                RightLoveBird.SetActive(true);
+            }
+        else if (distribution <= -0.2f) 
+            {
+                Debug.Log("Redbird is sad");
+                SadBlueBird.SetActive(false);
+                NeutralBlueBird.SetActive(true);
+                NeutralRedBird.SetActive(false);
+                SadRedBird.SetActive(true);
+                NeutralLoveBird.SetActive(false);
+                LeftLoveBird.SetActive(true);
+                RightLoveBird.SetActive(false);
+            }
+        else
+        {
+                Debug.Log("Both Bitch Birds Neutral");
+                SadBlueBird.SetActive(false);
+                NeutralBlueBird.SetActive(true);
+                NeutralRedBird.SetActive(true);
+                SadRedBird.SetActive(false); 
+                NeutralLoveBird.SetActive(true);
+                LeftLoveBird.SetActive(false);
+                RightLoveBird.SetActive(false);
+        }
     }
 
     IEnumerator changeValueOverTime(float fromVal, float toVal, float duration)
@@ -45,7 +100,7 @@ public class ProgressionBarManager : MonoBehaviour
                 counter += Time.deltaTime;
 
             float val = Mathf.Lerp(fromVal, toVal, counter / duration);
-            Debug.Log("Val: " + val);
+            //Debug.Log("Val: " + val);
             sliderMat.SetFloat(sliderDistributionFloatName, val);
             yield return null;
         }
