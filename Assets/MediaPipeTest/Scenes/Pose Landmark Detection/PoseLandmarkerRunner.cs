@@ -40,6 +40,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
 
       yield return AssetLoader.PrepareAssetAsync(config.ModelPath);
 
+            // Builds the options with a reference to the ouput function
       var options = config.GetPoseLandmarkerOptions(config.RunningMode == Tasks.Vision.Core.RunningMode.LIVE_STREAM ? OnPoseLandmarkDetectionOutput : null);
       taskApi = PoseLandmarker.CreateFromOptions(options, GpuManager.GpuResources);
       var imageSource = ImageSourceProvider.ImageSource;
@@ -161,7 +162,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
 
     private void OnPoseLandmarkDetectionOutput(PoseLandmarkerResult result, Image image, long timestamp)
     {
-            print(result.poseWorldLandmarks[0]);
+            print(result.poseWorldLandmarks[0].landmarks[0]);
 
       _poseLandmarkerResultAnnotationController.DrawLater(result);
       DisposeAllMasks(result);
