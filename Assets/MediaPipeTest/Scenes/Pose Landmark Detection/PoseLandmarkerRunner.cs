@@ -19,6 +19,8 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
 
     public readonly PoseLandmarkDetectionConfig config = new PoseLandmarkDetectionConfig();
 
+        
+
     public override void Stop()
     {
       base.Stop();
