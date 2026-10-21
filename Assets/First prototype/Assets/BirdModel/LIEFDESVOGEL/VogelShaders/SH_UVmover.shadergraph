@@ -301,8 +301,8 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
+        "x": 0.5,
+        "y": 0.5,
         "z": 0.0,
         "w": 0.0
     }
@@ -635,8 +635,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1068.5,
-            "y": 327.0,
+            "x": -1068.5001220703125,
+            "y": 326.0000305175781,
             "width": 170.5,
             "height": 34.0
         }
@@ -1465,7 +1465,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"c39f9755a307c7041bdc853f7dc4f176\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"4854b5e3cb0fb4343b7147e5bdefd0a3\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
