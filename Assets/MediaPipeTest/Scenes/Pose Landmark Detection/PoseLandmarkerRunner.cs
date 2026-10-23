@@ -13,15 +13,19 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
 {
   public class PoseLandmarkerRunner : VisionTaskApiRunner<PoseLandmarker>
   {
+        
+        
+
     [SerializeField] private PoseLandmarkerResultAnnotationController _poseLandmarkerResultAnnotationController;
 
     private Experimental.TextureFramePool _textureFramePool;
 
     public readonly PoseLandmarkDetectionConfig config = new PoseLandmarkDetectionConfig();
 
-        
+        public delegate void OnPoseLandmarkerResult(PoseLandmarkerResult result);
+        public OnPoseLandmarkerResult onPoseLandmarkerResult;
 
-    public override void Stop()
+        public override void Stop()
     {
       base.Stop();
       _textureFramePool?.Dispose();
@@ -164,7 +168,10 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
 
     private void OnPoseLandmarkDetectionOutput(PoseLandmarkerResult result, Image image, long timestamp)
     {
-            print(result.poseWorldLandmarks[0].landmarks[0]);
+
+
+
+            onPoseLandmarkerResult?.Invoke(result);
 
       _poseLandmarkerResultAnnotationController.DrawLater(result);
       DisposeAllMasks(result);
