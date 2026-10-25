@@ -654,7 +654,6 @@ GameObject:
   - component: {fileID: 233716905}
   - component: {fileID: 233716907}
   - component: {fileID: 233716906}
-  - component: {fileID: 233716908}
   m_Layer: 5
   m_Name: Left_LoveBird
   m_TagString: Untagged
@@ -671,14 +670,14 @@ RectTransform:
   m_GameObject: {fileID: 233716904}
   m_LocalRotation: {x: -0.0019401615, y: 0.003578706, z: 0.04362635, w: 0.99903965}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.94122964, y: 0.94122964, z: 0.94122964}
+  m_LocalScale: {x: 0.94122964, y: 0.94122964, z: 0.9412297}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
+  m_Father: {fileID: 676516086}
   m_LocalEulerAnglesHint: {x: -0.24, y: 0.4, z: 5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -52}
+  m_AnchoredPosition: {x: -14.5, y: 41.9}
   m_SizeDelta: {x: 80, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233716906
@@ -719,22 +718,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233716904}
   m_CullTransparentMesh: 1
---- !u!114 &233716908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233716904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &285687399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1276,6 @@ GameObject:
   - component: {fileID: 422952658}
   - component: {fileID: 422952660}
   - component: {fileID: 422952659}
-  - component: {fileID: 422952661}
   m_Layer: 5
   m_Name: LoveBird
   m_TagString: Untagged
@@ -1310,14 +1292,14 @@ RectTransform:
   m_GameObject: {fileID: 422952657}
   m_LocalRotation: {x: -0.002094416, y: 0.0034906715, z: 0.0000073109786, w: 0.9999918}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.94122964, y: 0.94122964, z: 0.94122964}
+  m_LocalScale: {x: 0.94122964, y: 0.9412297, z: 0.9412297}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
+  m_Father: {fileID: 676516086}
   m_LocalEulerAnglesHint: {x: -0.24, y: 0.4, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -52}
+  m_AnchoredPosition: {x: -13.5, y: 43}
   m_SizeDelta: {x: 80, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422952659
@@ -1358,22 +1340,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422952657}
   m_CullTransparentMesh: 1
---- !u!114 &422952661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422952657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &566487171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,6 +1628,117 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &676516085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 676516086}
+  - component: {fileID: 676516087}
+  m_Layer: 5
+  m_Name: Bounch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &676516086
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676516085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 422952658}
+  - {fileID: 233716905}
+  - {fileID: 1417798940}
+  m_Father: {fileID: 1987412780}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14.5, y: -22}
+  m_SizeDelta: {x: 1816, y: 179.6447}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &676516087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676516085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
+  bpm: 100
+  firstBeatOffset: 0.1
+  pulseScale: 1.2
+  returnSpeed: 6
+--- !u!1 &689352737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689352738}
+  - component: {fileID: 689352739}
+  m_Layer: 5
+  m_Name: Bounch Rivals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &689352738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689352737}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1587480049}
+  - {fileID: 2092993965}
+  - {fileID: 1763635579}
+  - {fileID: 1244701984}
+  m_Father: {fileID: 1987412780}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14.5, y: -22}
+  m_SizeDelta: {x: 1816, y: 179.6447}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &689352739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689352737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
+  bpm: 100
+  firstBeatOffset: 0.1
+  pulseScale: 1.02
+  returnSpeed: 6
 --- !u!1 &774289379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,8 +1847,8 @@ Transform:
   m_GameObject: {fileID: 774289379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0, y: 5.67, z: 11.62}
-  m_LocalScale: {x: 1.2218708, y: 1, z: 0.10212682}
+  m_LocalPosition: {x: 0.002, y: 5.442, z: 11.62}
+  m_LocalScale: {x: 1.7738013, y: 1, z: 0.15483424}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2217,7 +2294,6 @@ GameObject:
   - component: {fileID: 1244701984}
   - component: {fileID: 1244701986}
   - component: {fileID: 1244701985}
-  - component: {fileID: 1244701987}
   m_Layer: 5
   m_Name: SadRedBird
   m_TagString: Untagged
@@ -2232,17 +2308,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244701983}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.04445815, w: -0.9990113}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1262221, y: 1.1262221, z: 1.1262221}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 689352738}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.096}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -569, y: -9.9}
-  m_SizeDelta: {x: 80, y: 90}
+  m_AnchoredPosition: {x: -818, y: -2.2000008}
+  m_SizeDelta: {x: 166.9914, y: 162.2275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244701985
 MonoBehaviour:
@@ -2264,7 +2340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 914edbf548e4c364bb4fbb2bc61da240, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac2010e816f242648a69781bd19c29f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2282,22 +2358,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244701983}
   m_CullTransparentMesh: 1
---- !u!114 &1244701987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244701983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1001 &1383166046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2366,7 +2426,6 @@ GameObject:
   - component: {fileID: 1417798940}
   - component: {fileID: 1417798942}
   - component: {fileID: 1417798941}
-  - component: {fileID: 1417798943}
   m_Layer: 5
   m_Name: Right_LoveBird
   m_TagString: Untagged
@@ -2381,16 +2440,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417798939}
-  m_LocalRotation: {x: -0.0022446834, y: 0.0033959916, z: -0.04361174, w: 0.99904025}
+  m_LocalRotation: {x: -0.0022446837, y: 0.0033959919, z: -0.043611743, w: 0.9990403}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.94122964, y: 0.94122964, z: 0.94122964}
+  m_LocalScale: {x: 0.94122964, y: 0.94122964, z: 0.9412297}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
+  m_Father: {fileID: 676516086}
   m_LocalEulerAnglesHint: {x: -0.24, y: 0.4, z: -5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -52}
+  m_AnchoredPosition: {x: -13.2, y: 41.4}
   m_SizeDelta: {x: 80, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417798941
@@ -2431,22 +2490,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417798939}
   m_CullTransparentMesh: 1
---- !u!114 &1417798943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417798939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &1458383853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2561,6 @@ GameObject:
   - component: {fileID: 1587480049}
   - component: {fileID: 1587480051}
   - component: {fileID: 1587480050}
-  - component: {fileID: 1587480052}
   m_Layer: 5
   m_Name: BlueBird
   m_TagString: Untagged
@@ -2535,15 +2577,15 @@ RectTransform:
   m_GameObject: {fileID: 1587480048}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0771402, y: 1.0771402, z: 1.0771402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
+  m_Father: {fileID: 689352738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 562, y: -20}
-  m_SizeDelta: {x: 80, y: 90}
+  m_AnchoredPosition: {x: 820.5, y: 0}
+  m_SizeDelta: {x: 175, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1587480050
 MonoBehaviour:
@@ -2565,7 +2607,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29f70ddb496c1d64c8642b82c0e1f63a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e715700f6572d0a468212c1a21164db4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2583,22 +2625,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587480048}
   m_CullTransparentMesh: 1
---- !u!114 &1587480052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587480048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &1648018493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,7 +2682,6 @@ GameObject:
   - component: {fileID: 1763635579}
   - component: {fileID: 1763635581}
   - component: {fileID: 1763635580}
-  - component: {fileID: 1763635582}
   m_Layer: 5
   m_Name: SadBlueBird
   m_TagString: Untagged
@@ -2671,17 +2696,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763635578}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.04822978, w: 0.9988363}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0025654, y: 1.0025654, z: 1.0025654}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 689352738}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.529}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 562.8, y: -17}
-  m_SizeDelta: {x: 80, y: 90}
+  m_AnchoredPosition: {x: 817.9, y: -7.200001}
+  m_SizeDelta: {x: 175, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763635580
 MonoBehaviour:
@@ -2703,7 +2728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad44a81bae8a3204cb6d3dfe1857300c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d34ebb49a4ab15949990e4717ba1bb32, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2721,22 +2746,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763635578}
   m_CullTransparentMesh: 1
---- !u!114 &1763635582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763635578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &1987412779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,22 +2773,17 @@ RectTransform:
   m_GameObject: {fileID: 1987412779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.991129, y: 0.991129, z: 0.991129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 422952658}
-  - {fileID: 233716905}
-  - {fileID: 1417798940}
-  - {fileID: 1587480049}
-  - {fileID: 2092993965}
-  - {fileID: 1763635579}
-  - {fileID: 1244701984}
+  - {fileID: 689352738}
+  - {fileID: 676516086}
   m_Father: {fileID: 672738972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 449}
-  m_SizeDelta: {x: 1400, y: 200}
+  m_AnchoredPosition: {x: -0.000061035, y: 398.85577}
+  m_SizeDelta: {x: 1920, y: 282.2885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1987412781
 MonoBehaviour:
@@ -2801,7 +2805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98c17f8063ac7e9438ec5402633fc353, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8cb1c62cd2dc1d84ab181616c7b535d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2898,7 +2902,6 @@ GameObject:
   - component: {fileID: 2092993965}
   - component: {fileID: 2092993967}
   - component: {fileID: 2092993966}
-  - component: {fileID: 2092993968}
   m_Layer: 5
   m_Name: RedBird
   m_TagString: Untagged
@@ -2915,15 +2918,15 @@ RectTransform:
   m_GameObject: {fileID: 2092993964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.01659, y: 1.01659, z: 1.01659}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1987412780}
+  m_Father: {fileID: 689352738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -569, y: -20}
-  m_SizeDelta: {x: 80, y: 90}
+  m_AnchoredPosition: {x: -820.5, y: 0}
+  m_SizeDelta: {x: 175, y: 179.6447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092993966
 MonoBehaviour:
@@ -2963,22 +2966,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092993964}
   m_CullTransparentMesh: 1
---- !u!114 &2092993968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092993964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &2111558935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +2985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2111558936
 RectTransform:
   m_ObjectHideFlags: 0
