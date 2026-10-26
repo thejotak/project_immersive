@@ -2688,6 +2688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LiefdesVogel
       objectReference: {fileID: 0}
+    - target: {fileID: 5336140007943765702, guid: 002daa36f32de2f468079967f569cc94, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5539477559635229150, guid: 002daa36f32de2f468079967f569cc94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
