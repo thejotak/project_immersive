@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LiefdesVogelAvatarMond
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000u
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: BodyArmature
+    m_Weight: 0
+  - m_Path: BodyArmature/Root
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.CTRL.toecontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.CTRL.toecontrol/l.CTRL.toecontrol_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.midtoepoint
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.midtoepoint/l.midtoepoint_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.outertoe
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.outertoe/l.outertoepoint
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.outertoe/l.outertoepoint/l.outertoepoint_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.pointertoe
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.pointertoe/l.pointertoepoint
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/l.hip/l.upperleg/l.lowerleg/l.foot/l.midtoe/l.pointertoe/l.pointertoepoint/l.pointertoepoint_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/hair
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/hair/hair_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/head.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/head.001/head.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/lowerbeak
+    m_Weight: 1
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/lowerbeak/lowerbeak_end
+    m_Weight: 1
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/upperbeak
+    m_Weight: 1
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/upperbeak/l.beakedge
+    m_Weight: 1
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/upperbeak/l.beakedge/l.beakedge_end
+    m_Weight: 1
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/upperbeak/r.beakedge
+    m_Weight: 1
+  - m_Path: BodyArmature/Root/core/middle/breast/neck/head/upperbeak/r.beakedge/r.beakedge_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.CRTL.wingcontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.CRTL.wingcontrol/l.CRTL.wingcontrol_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.CTRL.rolltarget
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.CTRL.rolltarget/l.CTRL.rolltarget_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.CTRL.midfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.CTRL.midfeather/l.CTRL.midfeather_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.CTRL.outerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.CTRL.outerfeather/l.CTRL.outerfeather_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.CTRL.pointerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.CTRL.pointerfeather/l.CTRL.pointerfeather_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.midfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.midfeather/l.midfeather.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.midfeather/l.midfeather.001/l.midfeather.002
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.midfeather/l.midfeather.001/l.midfeather.002/l.midfeather.002_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.outerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.outerfeather/l.outerfeather.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.outerfeather/l.outerfeather.001/l.outerfeather.002
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.outerfeather/l.outerfeather.001/l.outerfeather.002/l.outerfeather.002_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.pointerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.pointerfeather/l.pointerfeather.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.pointerfeather/l.pointerfeather.001/l.pointerfeather.002
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wing3/l.wing3.001/l.pointerfeather/l.pointerfeather.001/l.pointerfeather.002/l.pointerfeather.002_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wingbone3
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wingbone3/l.wingbone3.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wing2/l.wingbone3/l.wingbone3.001/l.wingbone3.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wingbone2
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wingbone2/l.wingbone2.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wing1/l.wingbone2/l.wingbone2.001/l.wingbone2.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wingbone1
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wingbone1/l.wingbone1.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/l.wingstart/l.wingbone1/l.wingbone1.001/l.wingbone1.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.CRTL.wingcontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.CRTL.wingcontrol/r.CRTL.wingcontrol_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.CTRL.rolltarget
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.CTRL.rolltarget/r.CTRL.rolltarget_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.CTRL.midfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.CTRL.midfeather/r.CTRL.midfeather_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.CTRL.outerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.CTRL.outerfeather/r.CTRL.outerfeather_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.CTRL.pointerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.CTRL.pointerfeather/r.CTRL.pointerfeather_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.midfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.midfeather/r.midfeather.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.midfeather/r.midfeather.001/r.midfeather.002
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.midfeather/r.midfeather.001/r.midfeather.002/r.midfeather.002_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.outerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.outerfeather/r.outerfeather.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.outerfeather/r.outerfeather.001/r.outerfeather.002
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.outerfeather/r.outerfeather.001/r.outerfeather.002/r.outerfeather.002_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.pointerfeather
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.pointerfeather/r.pointerfeather.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.pointerfeather/r.pointerfeather.001/r.pointerfeather.002
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wing3/r.wing3.001/r.pointerfeather/r.pointerfeather.001/r.pointerfeather.002/r.pointerfeather.002_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wingbone3
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wingbone3/r.wingbone3.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wing2/r.wingbone3/r.wingbone3.001/r.wingbone3.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wingbone2
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wingbone2/r.wingbone2.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wing1/r.wingbone2/r.wingbone2.001/r.wingbone2.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wingbone1
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wingbone1/r.wingbone1.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/middle/r.wingstart/r.wingbone1/r.wingbone1.001/r.wingbone1.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.CTRL.toecontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.CTRL.toecontrol/r.CTRL.toecontrol_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.midtoepoint
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.midtoepoint/r.midtoepoint_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.outertoe
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.outertoe/r.outertoepoint
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.outertoe/r.outertoepoint/r.outertoepoint_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.pointertoe
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.pointertoe/r.pointertoepoint
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/r.hip/r.upperleg/r.lowerleg/r.foot/r.midtoe/r.pointertoe/r.pointertoepoint/r.pointertoepoint_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/CTRL.tailcontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/CTRL.tailcontrol/CTRL.tailcontrol_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/l.tail
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/l.tail/l.tailend
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/l.tail/l.tailend/l.tailend.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/l.tail/l.tailend/l.tailend.001/l.tailend.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/r.tail
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/r.tail/r.tailend
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/r.tail/r.tailend/r.tailend.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/r.tail/r.tailend/r.tailend.001/r.tailend.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/tailend
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/tailend/tailend.001
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/core/tailstart/tail/tailend/tailend.001/tailend.001_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/CTRL.core
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/CTRL.core/CTRL.core_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/l.CTRL.footcontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/l.CTRL.footcontrol/l.CTRL.ikpole
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/l.CTRL.footcontrol/l.CTRL.ikpole/l.CTRL.ikpole_end
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/r.CTRL.footcontrol
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/r.CTRL.footcontrol/r.CTRL.ikpole
+    m_Weight: 0
+  - m_Path: BodyArmature/Root/r.CTRL.footcontrol/r.CTRL.ikpole/r.CTRL.ikpole_end
+    m_Weight: 0
+  - m_Path: Camera
+    m_Weight: 0
+  - m_Path: Liefdesvogel
+    m_Weight: 0
