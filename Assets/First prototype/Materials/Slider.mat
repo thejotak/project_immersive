@@ -56,7 +56,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _CorrectionFloat: 45.9
-    - _Distribution: 0.049999997
+    - _Distribution: 0
     - _Effect_Falloff: 2.08
     - _Effect_Strength: 0.37
     - _Effect_Thickness: 9.46

@@ -101,7 +101,7 @@ public class PointsManager : MonoBehaviour
         }
     }
 
-    private void AddPoints(int points, string player)
+    public void AddPoints(int points, string player)
     {
         if (player == "A")
         {
