@@ -29,7 +29,7 @@ public class PointsManager : MonoBehaviour
         }
     }
 
-    [SerializeField] PopupController popupController;
+    [SerializeField] PointsPopupController pointsPopupController;
     private PointsDisplay pointsDisplay;
 
 
@@ -101,7 +101,7 @@ public class PointsManager : MonoBehaviour
         }
     }
 
-    private void AddPoints(int points, string player)
+    public void AddPoints(int points, string player)
     {
         if (player == "A")
         {
@@ -109,7 +109,7 @@ public class PointsManager : MonoBehaviour
             print($"{points} points were added to player {player}");
             print($"player {player} now has {PlayerAPoints} points");
 
-            popupController.addPoints(points, player == "A");
+            pointsPopupController.CreatePopup(points, player == "A");
         }
         else if (player == "B")
         {
@@ -117,7 +117,7 @@ public class PointsManager : MonoBehaviour
             print($"{points} points were added to player {player}");
             print($"player {player} now has {PlayerBPoints} points");
 
-            popupController.addPoints(points, player == "A");
+            pointsPopupController.CreatePopup(points, player == "A");
 
         }
     }

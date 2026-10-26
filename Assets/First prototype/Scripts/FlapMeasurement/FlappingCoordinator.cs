@@ -7,6 +7,8 @@ public class FlappingCoordinator : MonoBehaviour
     PoseLandmarkerRunner runner;
     MeasureFlapQuality[] MeasureFlapQualities;
 
+    [SerializeField] PointsManager pointsManager;
+
     private void Start()
     {
         runner = GetComponent<PoseLandmarkerRunner>();
@@ -29,8 +31,19 @@ public class FlappingCoordinator : MonoBehaviour
 
     private void HandleScores(float score, int player)
     {
-        print("----------");
-        print($"player {player} got a score of {score}");
+        string[] players = new string[2];
+        players[0] = "B";
+        players[1] = "A";
+
+        // The output score is somewhere between 0.2 and 0.6, so for a score between 3 and 10 we do points = (score * 100/7).RoundToInt
+        // 0.2 => 3 and 0.6 => 9, so there is some room for excellence
+
+        int points = Mathf.RoundToInt(score * 100 / 6);
+
+        pointsManager.AddPoints(points, players[player]);
+
+        //print("----------");
+        //print($"player {player} got {points} points");
     }
 
 }
