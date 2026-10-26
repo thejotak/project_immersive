@@ -1324,22 +1324,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422952657}
   m_CullTransparentMesh: 1
---- !u!114 &422952661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422952657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &424709413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
   bpm: 100
   firstBeatOffset: 0.1
-  pulseScale: 1.2
+  pulseScale: 1.1
   returnSpeed: 6
 --- !u!1 &689352737
 GameObject:
@@ -2794,22 +2778,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244701983}
   m_CullTransparentMesh: 1
---- !u!114 &1244701987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244701983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &1260505969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,22 +3000,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417798939}
   m_CullTransparentMesh: 1
---- !u!114 &1417798943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417798939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &1451576609
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,22 +3430,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763635578}
   m_CullTransparentMesh: 1
---- !u!114 &1763635582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763635578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f60eab27519ec4e9b75c955f5b865f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeatPulse
-  bpm: 100
-  firstBeatOffset: 0.1
-  pulseScale: 1.2
-  returnSpeed: 6
 --- !u!1 &1843389080
 GameObject:
   m_ObjectHideFlags: 0
