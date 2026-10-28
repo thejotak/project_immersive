@@ -32,19 +32,19 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: BodyArmature|SHUSH (1)
-      takeName: BodyArmature|SHUSH
+      name: BodyArmature|INTRO2 (1)
+      takeName: BodyArmature|INTRO2
       internalID: 5984612956442952119
-      firstFrame: 1
-      lastFrame: 120
+      firstFrame: 164
+      lastFrame: 368
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -119,6 +119,35 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
+      name: BodyArmature|IDLEFLUTTER.001
+      takeName: BodyArmature|IDLEFLUTTER.001
+      internalID: -2746294345875003605
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000u
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
       name: BodyArmature|INTRO
       takeName: BodyArmature|INTRO
       internalID: -3813660020559152316
@@ -151,8 +180,8 @@ ModelImporter:
       name: BodyArmature|INTRO2
       takeName: BodyArmature|INTRO2
       internalID: -4020764643974447803
-      firstFrame: 0
-      lastFrame: 192
+      firstFrame: 164
+      lastFrame: 368
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -470,7 +499,7 @@ ModelImporter:
       name: BodyArmature|SHUSH
       takeName: BodyArmature|SHUSH
       internalID: -3351729640707185386
-      firstFrame: 1
+      firstFrame: 0
       lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
@@ -478,8 +507,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
