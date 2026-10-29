@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 
+// DEPRECATED
+
 public class PointsDisplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI pointsTextA;
