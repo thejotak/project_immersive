@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
+    [SerializeField] BirdAnimationManager animationManager;
+
     [Header("------Audio Source------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
@@ -89,18 +91,21 @@ public class PlaySound : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            animationManager.ContinueFlapping();
             BirdSource.PlayOneShot(nostop1);
 
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            animationManager.ContinueFlapping();
             BirdSource.PlayOneShot(nostop2);
 
         }
 
         if (Input.GetKeyDown(KeyCode.T))
         {
+            animationManager.BeSilent();
             BirdSource.PlayOneShot(Flamingofetisch);
 
         }
@@ -126,6 +131,7 @@ public class PlaySound : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
+            animationManager.BeSilent();
             BirdSource.PlayOneShot(Sing4baby);
 
         }
