@@ -22,6 +22,10 @@ public class BirdAnimationManager : MonoBehaviour
         }
     }
 
+    public void BeSilent()
+    {
+        animator.SetTrigger("shush");
+    }
 
     public void ContinueFlapping()
     {

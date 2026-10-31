@@ -105,6 +105,7 @@ public class PlaySound : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
+            animationManager.BeSilent();
             BirdSource.PlayOneShot(Flamingofetisch);
 
         }
@@ -130,6 +131,7 @@ public class PlaySound : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
+            animationManager.BeSilent();
             BirdSource.PlayOneShot(Sing4baby);
 
         }
