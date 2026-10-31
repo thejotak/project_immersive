@@ -7,6 +7,7 @@ public class ProgressionBarManager : MonoBehaviour
     [SerializeField] private Material sliderMat;
     [SerializeField] private string sliderDistributionFloatName;
     [SerializeField] private int maxScore;
+    [SerializeField] private BirdAnimationManager animationManager;
     private float a0;
     private float b0;
     public GameObject SadBlueBird;
@@ -45,6 +46,7 @@ public class ProgressionBarManager : MonoBehaviour
         float b = pointsManager.PlayerBPoints;
         float distribution = distribution0 + ((a-a0)/maxScore) - ((b-b0)/maxScore);
 
+        animationManager.Lean(distribution);
         StartCoroutine(changeValueOverTime(distribution0, distribution, 0.5f));
 
         a0 = a;

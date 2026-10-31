@@ -934,7 +934,7 @@ MonoBehaviour:
   roundActive: 1
   switchTime: 30
   timerText: {fileID: 0}
-  pointsManager: {fileID: 0}
+  pointsManager: {fileID: 5575585337737916111}
   audioBar: {fileID: 0}
   playerABarPosition: {x: 31, y: 0}
   playerBBarPosition: {x: 1631, y: 0}
