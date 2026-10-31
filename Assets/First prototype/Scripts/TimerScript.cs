@@ -1,14 +1,14 @@
 using System.Collections;
-using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TimerScript : MonoBehaviour
 
-   
+public class TimerScript : MonoBehaviour
 {
-    public string levelToLoad;
     [SerializeField] private float time_Left;
+
+    [SerializeField] private string blueVictoryScreen;
+    [SerializeField] private string redVictoryScreen;
 
 
   
@@ -27,13 +27,25 @@ public class TimerScript : MonoBehaviour
 
         if(time_Left <= 0)
         {
-            SceneManager.LoadScene("VictoryScreen");
+            SceneManager.LoadScene(DetermineWinScreen());
             Debug.Log("Time's UP!");
             time_Left = 0;
             StopAllCoroutines();
         }
         yield return new WaitForSeconds(1);
         StartCoroutine(timer_Count());
+    }
+
+    private string DetermineWinScreen()
+    {
+        if (PointsManager.instance.PlayerAPoints > PointsManager.instance.PlayerBPoints)
+        {
+            return redVictoryScreen;
+        }
+        else
+        {
+            return blueVictoryScreen;
+        }
     }
 
 

@@ -1219,8 +1219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5916e3358b7f6d42a8ff17e612d647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerScript
-  levelToLoad: VictoryScreen
   time_Left: 200
+  blueVictoryScreen: BlueVictoryScreen
+  redVictoryScreen: RedVictoryScreen
 --- !u!4 &566487173
 Transform:
   m_ObjectHideFlags: 0

@@ -3,6 +3,10 @@ using UnityEngine.Events;
 
 public class PointsManager : MonoBehaviour
 {
+    public static PointsManager instance;
+    
+
+
     public delegate void PlayerPointsChanged(int newAmount);
     public PlayerPointsChanged playerAPointsChanged;
     public PlayerPointsChanged playerBPointsChanged;
@@ -32,7 +36,13 @@ public class PointsManager : MonoBehaviour
     [SerializeField] PointsPopupController pointsPopupController;
     private PointsDisplay pointsDisplay;
 
-
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     private void Start()
     {
         pointsDisplay = GetComponentInChildren<PointsDisplay>();
