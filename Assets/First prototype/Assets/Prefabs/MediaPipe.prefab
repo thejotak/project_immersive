@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c971b65a50f634d88f07bd3bcf6332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeasureFlapQuality
-  flapElbowScoreDiffInterval: 0.5
+  flapElbowScoreDiffInterval: 0.2
   player: 0
 --- !u!1 &1893707142064125661
 GameObject:
@@ -199,7 +199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5992530155230969106
 Transform:
   m_ObjectHideFlags: 0
