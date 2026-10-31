@@ -2529,8 +2529,8 @@
     "m_ObjectId": "0fe00e0d31e54e4788674c03aabf9a2a",
     "m_Title": "Color",
     "m_Position": {
-        "x": -1010.66650390625,
-        "y": -217.3333740234375
+        "x": -1010.0,
+        "y": -217.0
     }
 }
 
@@ -4259,8 +4259,8 @@
     "m_ObjectId": "3902f4d4a0474afb991ecace3b344fea",
     "m_Title": "Effect + Glow Mask",
     "m_Position": {
-        "x": -1146.666748046875,
-        "y": 298.6666259765625
+        "x": -1146.0,
+        "y": 299.0
     }
 }
 
@@ -4306,8 +4306,8 @@
     "m_ObjectId": "3c98707552714df0a71b22e13b022ee1",
     "m_Title": "Mathematical Nonsense",
     "m_Position": {
-        "x": -4081.333251953125,
-        "y": -1930.0001220703125
+        "x": -4081.0,
+        "y": -1930.0
     }
 }
 
@@ -4786,8 +4786,8 @@
     "m_ObjectId": "431d279904fb48e9a4c0643c87caaf8b",
     "m_Title": "Glow",
     "m_Position": {
-        "x": -1229.333251953125,
-        "y": 1030.6666259765625
+        "x": -1229.0,
+        "y": 1031.0
     }
 }
 
@@ -5087,8 +5087,8 @@
     "m_ObjectId": "486827c78e6c4fe8b1f0fed344b0933b",
     "m_Title": "Division",
     "m_Position": {
-        "x": -1974.6666259765625,
-        "y": -197.3333740234375
+        "x": -1974.0,
+        "y": -197.0
     }
 }
 
@@ -10655,8 +10655,8 @@
     "m_ObjectId": "b959426f5eb144ecbb7bf4378ae7acf7",
     "m_Title": "Effect Mask",
     "m_Position": {
-        "x": -1221.333251953125,
-        "y": 664.0001220703125
+        "x": -1221.0,
+        "y": 664.0
     }
 }
 
@@ -11829,7 +11829,7 @@
     "m_AlphaMode": 0,
     "m_RenderFace": 2,
     "m_AlphaClip": true,
-    "m_CastShadows": true,
+    "m_CastShadows": false,
     "m_ReceiveShadows": true,
     "m_DisableTint": false,
     "m_Sort3DAs2DCompatible": false,
