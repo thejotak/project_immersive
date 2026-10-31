@@ -7,11 +7,18 @@ public class BirdAnimationManager : MonoBehaviour
     [SerializeField] AudioSource birdAudio;
 
 
+    private bool isLeanLerping = false;
+    float targetDistibution;
+    float t;
+    float lerpSpeed = 1;
+
     public void Lean(float distribution)
     {
         distribution += 0.5f;
-
-        animator.SetFloat("idleBlend", distribution);
+        targetDistibution = distribution;
+        t = 0;
+        isLeanLerping = true;
+        
     }
 
     private void Update()
@@ -19,6 +26,15 @@ public class BirdAnimationManager : MonoBehaviour
         if (birdAudio.isPlaying)
         {
             animator.SetBool("isTalking", true);
+        }
+
+        if (isLeanLerping)
+        {
+            t += Time.deltaTime;
+            float distribution = Mathf.Lerp(targetDistibution, animator.GetFloat("idleBlend"), t*lerpSpeed);
+            print(animator.GetFloat("idleBlend"));
+            animator.SetFloat("idleBlend", distribution);
+            if (animator.GetFloat("idleBlend") == targetDistibution) isLeanLerping = false;
         }
     }
 
