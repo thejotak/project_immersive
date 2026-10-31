@@ -1545,9 +1545,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1893707142064125661, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2407528137229723941, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: m_Name
       value: MediaPipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910600877132014504, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910600877132014504, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910600877132014504, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910600877132014504, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677435927635009, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677435927635009, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677435927635009, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677435927635009, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677437329116615, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677437329116615, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677437329116615, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161677437329116615, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7232243530247819290, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: pointsManager
@@ -2640,7 +2692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FillFromMicrophone
   audioBar: {fileID: 1474137228}
   sensitivitySlider: {fileID: 1260505971}
-  detector: {fileID: 0}
+  detector: {fileID: 1353824775}
   minimumSensibility: 2
   maximumSensibility: 10
   currentLoudnessSensibility: 1

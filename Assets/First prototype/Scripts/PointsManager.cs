@@ -4,8 +4,6 @@ using UnityEngine.Events;
 public class PointsManager : MonoBehaviour
 {
     public static PointsManager instance;
-    
-
 
     public delegate void PlayerPointsChanged(int newAmount);
     public PlayerPointsChanged playerAPointsChanged;
@@ -34,7 +32,6 @@ public class PointsManager : MonoBehaviour
     }
 
     [SerializeField] PointsPopupController pointsPopupController;
-    private PointsDisplay pointsDisplay;
 
     private void Awake()
     {
@@ -43,13 +40,6 @@ public class PointsManager : MonoBehaviour
             instance = this;
         }
     }
-    private void Start()
-    {
-        pointsDisplay = GetComponentInChildren<PointsDisplay>();
-        playerAPointsChanged += pointsDisplay.UpdatePointsText_pA;
-        playerBPointsChanged += pointsDisplay.UpdatePointsText_pB;
-    }
-
 
     // Update is called once per frame
     void Update()
@@ -60,54 +50,13 @@ public class PointsManager : MonoBehaviour
 
     private void DebugPointsInput()
     {
-        //if (Input.GetKey(KeyCode.Alpha1))
-        //{
-
-        //    if (Input.GetKeyDown(KeyCode.A))
-        //    {
-        //        AddPoints(10, "A");
-        //    } else if (Input.GetKeyDown(KeyCode.B))
-        //    {
-        //        AddPoints(10, "B");
-        //    }
-        //}
-
-        //else if (Input.GetKey(KeyCode.Alpha2))
-        //{
-        //    if (Input.GetKeyDown(KeyCode.A))
-        //    {
-        //        AddPoints(20, "A");
-        //    }
-        //    else if (Input.GetKeyDown(KeyCode.B))
-        //    {
-        //        AddPoints(20, "B");
-        //    }
-        //}
-
-        //else if (Input.GetKey(KeyCode.Alpha3))
-        //{
-        //    if (Input.GetKeyDown(KeyCode.A))
-        //    {
-        //        AddPoints(30, "A");
-        //    }
-        //    else if (Input.GetKeyDown(KeyCode.B))
-        //    {
-        //        AddPoints(30, "B");
-        //    }
-        //}
-
-        //else return;
-
-
-
-
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            AddPoints(10, "A");
+            AddPoints(10, "B");
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            AddPoints(10, "B");
+            AddPoints(10, "A");
         }
     }
 

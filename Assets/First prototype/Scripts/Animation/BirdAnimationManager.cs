@@ -14,6 +14,7 @@ public class BirdAnimationManager : MonoBehaviour
 
     public void Lean(float distribution)
     {
+        distribution *= -1;
         distribution += 0.5f;
         targetDistibution = distribution;
         t = 0;
