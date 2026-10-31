@@ -7,7 +7,7 @@ public class BirdAnimationManager : MonoBehaviour
     [SerializeField] AudioSource birdAudio;
 
 
-    private bool isLeanLerping = false;
+    [SerializeField] bool isLeanLerping = false;
     float targetDistibution;
     float t;
     float lerpSpeed = 1;
@@ -31,10 +31,9 @@ public class BirdAnimationManager : MonoBehaviour
         if (isLeanLerping)
         {
             t += Time.deltaTime;
-            float distribution = Mathf.Lerp(targetDistibution, animator.GetFloat("idleBlend"), t*lerpSpeed);
-            print(animator.GetFloat("idleBlend"));
+            float distribution = animator.GetFloat("idleBlend") + (targetDistibution - animator.GetFloat("idleBlend"))/lerpSpeed * Time.deltaTime;
+
             animator.SetFloat("idleBlend", distribution);
-            if (animator.GetFloat("idleBlend") == targetDistibution) isLeanLerping = false;
         }
     }
 
