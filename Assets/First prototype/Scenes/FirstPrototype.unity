@@ -1547,7 +1547,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1893707142064125661, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2407528137229723941, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: m_Name
@@ -2563,7 +2563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointsPopupController
   popupPrefab: {fileID: 867107523255111158, guid: b01e551afdb864e4f97e839e31d3bcce, type: 3}
-  lifeSpan: 4
+  lifeSpan: 3
   posA: {fileID: 7857697391886756159}
   posB: {fileID: 6252257895013841322}
 --- !u!1 &1843389080
