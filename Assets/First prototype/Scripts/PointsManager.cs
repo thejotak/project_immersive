@@ -9,6 +9,8 @@ public class PointsManager : MonoBehaviour
     public PlayerPointsChanged playerAPointsChanged;
     public PlayerPointsChanged playerBPointsChanged;
 
+    public GameManager gameManager;
+
     private int playerAPoints = 0;
     public int PlayerAPoints { 
         get { return playerAPoints; }
@@ -68,6 +70,8 @@ public class PointsManager : MonoBehaviour
             print($"{points} points were added to player {player}");
             print($"player {player} now has {PlayerAPoints} points");
 
+            if (gameManager.isP0Flamingo) points *= 2;
+
             pointsPopupController.CreatePopup(points, player == "A");
         }
         else if (player == "B")
@@ -75,6 +79,9 @@ public class PointsManager : MonoBehaviour
             PlayerBPoints += points;
             print($"{points} points were added to player {player}");
             print($"player {player} now has {PlayerBPoints} points");
+
+            if (gameManager.isP1Flamingo) points *= 2;
+
 
             pointsPopupController.CreatePopup(points, player == "A");
 

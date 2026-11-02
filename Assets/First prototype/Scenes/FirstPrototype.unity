@@ -1418,6 +1418,53 @@ MonoBehaviour:
   NeutralLoveBird: {fileID: 4529912783754922888}
   LeftLoveBird: {fileID: 7980673723892171961}
   RightLoveBird: {fileID: 1019062321804459301}
+--- !u!1 &819781438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 819781440}
+  - component: {fileID: 819781439}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &819781439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819781438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a6d806c8cf38a41a041efcc596621c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  shouldFlaming: 0
+  isP0Flamingo: 0
+  isP1Flamingo: 0
+--- !u!4 &819781440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819781438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.44352, y: 15.1989, z: -23.76108}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,6 +3948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535ed3d419907b8468951d6754f7a5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointsManager
+  gameManager: {fileID: 819781439}
   pointsPopupController: {fileID: 1685818570}
 --- !u!1 &5714241558610247012
 GameObject:
@@ -4263,3 +4311,4 @@ SceneRoots:
   - {fileID: 1353824773}
   - {fileID: 1170310341398774409}
   - {fileID: 443783237}
+  - {fileID: 819781440}
