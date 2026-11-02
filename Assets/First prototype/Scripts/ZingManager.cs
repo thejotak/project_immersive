@@ -5,7 +5,12 @@ using TMPro;
 public class ZingManager : MonoBehaviour
 {
     public bool player1Active = true;
-    public bool roundActive = true;
+
+    // De ronde is aan het begin nog niet actief
+    public bool roundActive = false;
+
+    // Geeft aan of de Zing-stage gestart is
+    public bool zingStageActive = false;
 
     // Duur per speler
     public float switchTime = 30f;
@@ -26,14 +31,56 @@ public class ZingManager : MonoBehaviour
     public Vector2 playerABarPosition;
     public Vector2 playerBBarPosition;
 
+    private Coroutine roundCoroutine;
 
-    void Start()
+
+    private void Start()
     {
-        StartCoroutine(RoundTimer());
+        // De Zing-stage begint nog niet direct.
+        zingStageActive = false;
+        roundActive = false;
+
+        // Timer staat op 0 totdat de Zing-stage begint
+        if (timerText != null)
+        {
+            timerText.text = "0";
+        }
+
+        // De audio bar eventueel verbergen tot de stage begint
+        if (audioBar != null)
+        {
+            audioBar.gameObject.SetActive(false);
+        }
     }
 
 
-    IEnumerator RoundTimer()
+    public void StartZingStage()
+    {
+        // Voorkomt dat de stage meerdere keren gestart wordt
+        if (zingStageActive)
+        {
+            return;
+        }
+
+        Debug.Log("2 minuten voorbij: Zing-stage gestart!");
+
+        zingStageActive = true;
+        roundActive = true;
+        player1Active = true;
+
+        // Audio bar zichtbaar maken
+        if (audioBar != null)
+        {
+            audioBar.gameObject.SetActive(true);
+            audioBar.anchoredPosition = playerABarPosition;
+        }
+
+        // Start de rondes
+        roundCoroutine = StartCoroutine(RoundTimer());
+    }
+
+
+    private IEnumerator RoundTimer()
     {
         // -------------------------
         // PLAYER A - 30 SECONDEN
@@ -41,14 +88,21 @@ public class ZingManager : MonoBehaviour
 
         player1Active = true;
 
-        // Zet audio bar aan de kant van Player A
-        audioBar.anchoredPosition = playerABarPosition;
+        if (audioBar != null)
+        {
+            audioBar.anchoredPosition = playerABarPosition;
+        }
+
+        Debug.Log("Ronde van speler A gestart!");
 
         float timer = switchTime;
 
-        while (timer > 0)
+        while (timer > 0f)
         {
-            timerText.text = Mathf.CeilToInt(timer).ToString();
+            if (timerText != null)
+            {
+                timerText.text = Mathf.CeilToInt(timer).ToString();
+            }
 
             timer -= Time.deltaTime;
 
@@ -62,14 +116,21 @@ public class ZingManager : MonoBehaviour
 
         player1Active = false;
 
-        // Verplaats audio bar naar de kant van Player B
-        audioBar.anchoredPosition = playerBBarPosition;
+        if (audioBar != null)
+        {
+            audioBar.anchoredPosition = playerBBarPosition;
+        }
+
+        Debug.Log("Ronde van speler B gestart!");
 
         timer = switchTime;
 
-        while (timer > 0)
+        while (timer > 0f)
         {
-            timerText.text = Mathf.CeilToInt(timer).ToString();
+            if (timerText != null)
+            {
+                timerText.text = Mathf.CeilToInt(timer).ToString();
+            }
 
             timer -= Time.deltaTime;
 
@@ -81,30 +142,32 @@ public class ZingManager : MonoBehaviour
         // RONDE AFGELOPEN
         // -------------------------
 
-        timerText.text = "0";
+        if (timerText != null)
+        {
+            timerText.text = "0";
+        }
 
         roundActive = false;
+        zingStageActive = false;
+        roundCoroutine = null;
 
-        Debug.Log("Ronde afgelopen!");
+        Debug.Log("Zing-rondes afgelopen!");
     }
 
 
     public void AddScore(int amount)
     {
-        // Geen punten meer nadat beide spelers
-        // hun ronde hebben gehad
-        if (!roundActive)
+        // Geen punten geven als de Zing-stage niet actief is
+        if (!zingStageActive || !roundActive)
         {
             return;
         }
-
 
         // Player A is bezig
         if (player1Active)
         {
             pointsManager.AddPoints(amount, "A");
         }
-
         // Player B is bezig
         else
         {
