@@ -54,11 +54,11 @@ public class PointsManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            AddPoints(10, "B");
+            AddPoints(10, "A");
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            AddPoints(10, "A");
+            AddPoints(10, "B");
         }
     }
 
