@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+using System.Collections;
+using System.Net.NetworkInformation;
+>>>>>>> Stashed changes
 using UnityEngine;
 
 public class PlaySound : MonoBehaviour
@@ -28,7 +33,43 @@ public class PlaySound : MonoBehaviour
     public AudioClip Nofight;
     public AudioClip Catcall1;
     public AudioClip Catcall2;
+<<<<<<< Updated upstream
   
+=======
+    public AudioClip Catcall3;
+    public AudioClip Catcall4;
+
+    [Header("------UI Icons------")]
+    public GameObject flapperP1;
+    public GameObject stilP1;
+    public GameObject flamingoP1;
+    public GameObject zingP1;
+    public GameObject flapperP2;
+    public GameObject stilP2;
+    public GameObject flamingoP2;
+    public GameObject zingP2;
+    public GameObject EiNaarSpeler2;
+    public GameObject UitroeptekensL;
+    public GameObject UitroeptekensR;
+
+    bool coroutineIsFinished = true;
+    private void Start()
+    {
+        flapperP1.SetActive(false);
+        stilP1.SetActive(false);
+        flamingoP1.SetActive(false);
+        zingP1.SetActive(false);
+
+        flapperP2.SetActive(false);
+        stilP2.SetActive(false);
+        flamingoP2.SetActive(false);
+        zingP2.SetActive(false);
+
+        EiNaarSpeler2.SetActive(false);
+        UitroeptekensL.SetActive(false);
+        UitroeptekensR.SetActive(false);
+    }
+>>>>>>> Stashed changes
 
     // Update is called once per frame
     void Update()
@@ -120,6 +161,25 @@ public class PlaySound : MonoBehaviour
         {
             BirdSource.PlayOneShot(Singgood);
 
+<<<<<<< Updated upstream
+=======
+            zingP1.SetActive(false);
+            stilP1.SetActive(true);
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(false);
+            zingP2.SetActive(true);
+            stilP2.SetActive(false);
+        if (coroutineIsFinished)
+
+            StartCoroutine("ActiveAndDeactivate");
+
+            else
+            {
+            StopCoroutine("ActiveAndDeactivate");
+            StartCoroutine("ActiveAndDeactivate");
+            }
+
+>>>>>>> Stashed changes
         }
         if (Input.GetKeyDown(KeyCode.V))
         {
@@ -141,5 +201,23 @@ public class PlaySound : MonoBehaviour
             BirdSource.PlayOneShot(Singbadgood);
 
         }
+    }
+
+    
+    IEnumerator ActiveAndDeactivate()
+
+    {
+    coroutineIsFinished = false;             
+    EiNaarSpeler2.SetActive(true);
+    UitroeptekensL.SetActive(true);
+    UitroeptekensR.SetActive(true);
+
+    yield return new WaitForSeconds(15.1f); 
+
+    EiNaarSpeler2.SetActive(false);
+    UitroeptekensL.SetActive(false);
+    UitroeptekensR.SetActive(false);
+    coroutineIsFinished = true;
+
     }
 }

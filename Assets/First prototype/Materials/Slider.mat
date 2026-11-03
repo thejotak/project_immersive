@@ -57,9 +57,13 @@ Material:
     m_Floats:
     - _CorrectionFloat: 45.9
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - _Distribution: -0.22000004
 =======
     - _Distribution: 0.20000003
+>>>>>>> Stashed changes
+=======
+    - _Distribution: 0
 >>>>>>> Stashed changes
     - _Effect_Falloff: 2.08
     - _Effect_Strength: 0.37
