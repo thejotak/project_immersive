@@ -1,4 +1,6 @@
+using System.Net.NetworkInformation;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlaySound : MonoBehaviour
 {
@@ -34,6 +36,28 @@ public class PlaySound : MonoBehaviour
     public AudioClip Catcall3;
     public AudioClip Catcall4;
 
+    [Header("------UI Icons------")]
+    public GameObject flapperP1;
+    public GameObject stilP1;
+    public GameObject flamingoP1;
+    public GameObject zingP1;
+    public GameObject flapperP2;
+    public GameObject stilP2;
+    public GameObject flamingoP2;
+    public GameObject zingP2;
+
+    private void Start()
+    {
+        flapperP1.SetActive(false);
+        stilP1.SetActive(false);
+        flamingoP1.SetActive(false);
+        zingP1.SetActive(false);
+
+        flapperP2.SetActive(false);
+        stilP2.SetActive(false);
+        flamingoP2.SetActive(false);
+        zingP2.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -41,6 +65,9 @@ public class PlaySound : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q))
         {
             BirdSource.PlayOneShot(Intro);
+
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.A))
@@ -108,6 +135,9 @@ public class PlaySound : MonoBehaviour
             animationManager.BeSilent();
             BirdSource.PlayOneShot(Flamingofetisch);
 
+            flamingoP1.SetActive(true);
+            flamingoP2.SetActive(true);
+
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -134,36 +164,69 @@ public class PlaySound : MonoBehaviour
             animationManager.BeSilent();
             BirdSource.PlayOneShot(Sing4baby);
 
+            zingP1.SetActive(true);
+            stilP2.SetActive(true);
+            flapperP2.SetActive(true);
+            flamingoP1.SetActive(false);
+            flamingoP2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
             BirdSource.PlayOneShot(Singgood);
 
+            zingP1.SetActive(false);
+            stilP1.SetActive(true);
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(false);
+            zingP2.SetActive(true);
+            stilP2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.V))
         {
             BirdSource.PlayOneShot(Singgoodbad);
 
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
             BirdSource.PlayOneShot(Singgoodgood);
 
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.N))
         {
             BirdSource.PlayOneShot(Singbad);
 
+            zingP1.SetActive(false);
+            stilP1.SetActive(true);
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(false);
+            zingP2.SetActive(true);
+            stilP2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
             BirdSource.PlayOneShot(Singbadbad);
 
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.M))
         {
             BirdSource.PlayOneShot(Singbadgood);
 
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
         }
     }
 }
