@@ -577,7 +577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 78.4, y: 83.5}
+  m_AnchoredPosition: {x: 78.3999, y: 83.5}
   m_SizeDelta: {x: 130.90002, y: 130.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &173288348
@@ -1416,11 +1416,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5916e3358b7f6d42a8ff17e612d647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerScript
-  time_Left: 180
+  time_Left: 190
   blueVictoryScreen: BlueVictoryScreen
   redVictoryScreen: RedVictoryScreen
   zingManager: {fileID: 1685818569}
-  zingStartTime: 110
+  zingStartTime: 120
 --- !u!4 &566487173
 Transform:
   m_ObjectHideFlags: 0
@@ -3205,7 +3205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -65.45001, y: 65.45001}
+  m_AnchoredPosition: {x: -84, y: 86}
   m_SizeDelta: {x: 130.90002, y: 130.90002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1645049742 stripped

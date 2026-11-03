@@ -147,6 +147,12 @@ public class ZingManager : MonoBehaviour
             timerText.text = "0";
         }
 
+        // Audio bar verbergen na speler B
+        if (audioBar != null)
+        {
+            audioBar.gameObject.SetActive(false);
+        }
+
         roundActive = false;
         zingStageActive = false;
         roundCoroutine = null;
