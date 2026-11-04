@@ -1937,7 +1937,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1893707142064125661, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2407528137229723941, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: m_Name
@@ -3359,7 +3359,7 @@ MonoBehaviour:
   currentLoudnessSensibility: 1
   threshold: 0.1
   scoreManager: {fileID: 1353824774}
-  screamThreshold: 3
+  screamThreshold: 1.3
   pointsPerScream: 10
 --- !u!1 &1872426840
 GameObject:
