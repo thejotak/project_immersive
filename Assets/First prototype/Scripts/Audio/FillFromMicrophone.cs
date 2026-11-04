@@ -112,10 +112,6 @@ public class FillFromMicrophone : MonoBehaviour
 
     public void SetLoudnessSensibility(float t)
     {
-        currentLoudnessSensibility = Mathf.Lerp(
-            minimumSensibility,
-            maximumSensibility,
-            t
-        );
+        currentLoudnessSensibility = Mathf.Lerp(minimumSensibility,maximumSensibility,t);
     }
 }

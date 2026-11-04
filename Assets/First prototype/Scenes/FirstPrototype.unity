@@ -3034,7 +3034,7 @@ MonoBehaviour:
   switchTime: 30
   timerText: {fileID: 1221195284}
   pointsManager: {fileID: 5575585336474373836}
-  birdAnimationManager: {fileID: 0}
+  birdAnimationManager: {fileID: 1522215463}
   audioBar: {fileID: 1474137227}
   playerABarPosition: {x: -330, y: 25}
   playerBBarPosition: {x: 330, y: 25}
