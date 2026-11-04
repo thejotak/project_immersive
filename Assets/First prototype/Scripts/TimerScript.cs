@@ -90,11 +90,11 @@ public class TimerScript : MonoBehaviour
         // Met % 60 krijg je de overgebleven seconden.
         int sec = Mathf.FloorToInt(time_Left % 60f);
 
-        Debug.Log(
-            "Algemene tijd: "
-            + min.ToString("00")
-            + ":"
-            + sec.ToString("00")
-        );
+        //Debug.Log(
+        //    "Algemene tijd: "
+        //    + min.ToString("00")
+        //    + ":"
+        //    + sec.ToString("00")
+        //);
     }
 }
