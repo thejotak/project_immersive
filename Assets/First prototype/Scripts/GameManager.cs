@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public bool isP0Flamingo;
     public bool isP1Flamingo;
 
+
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha9))
