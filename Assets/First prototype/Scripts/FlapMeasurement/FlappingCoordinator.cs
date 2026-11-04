@@ -1,6 +1,9 @@
 using Mediapipe.Tasks.Vision.PoseLandmarker;
 using Mediapipe.Unity.Sample.PoseLandmarkDetection;
 using UnityEngine;
+using System.Linq;
+using Mediapipe.Unity;
+using Mediapipe;
 
 public class FlappingCoordinator : MonoBehaviour
 {
@@ -16,10 +19,37 @@ public class FlappingCoordinator : MonoBehaviour
 
         MeasureFlapQualities = GetComponentsInChildren<MeasureFlapQuality>();
     }
-
+     
 
     private void MeasureFlaps(PoseLandmarkerResult result)
     {
+        //print($"{result.poseLandmarks[0].landmarks[0].x} vs {result.poseLandmarks[1].landmarks[0].x}");
+
+
+        //    if (result.poseLandmarks[0].landmarks[0].x > result.poseLandmarks[1].landmarks[0].x)
+        //{
+
+        //    for (int i = 0; i < MeasureFlapQualities.Length; i++)
+        //    {
+        //        MeasureFlapQualities[i].StartFlapMeasument(result, i);
+
+        //        MeasureFlapQualities[i].returnFlapScore -= HandleScores;
+        //        MeasureFlapQualities[i].returnFlapScore += HandleScores;
+        //    }
+        //}
+        //else
+        //{
+
+        //    for (int i = MeasureFlapQualities.Length - 1; i >= 0; i--)
+        //    {
+        //        MeasureFlapQualities[i].StartFlapMeasument(result, i);
+
+        //        MeasureFlapQualities[i].returnFlapScore -= HandleScores;
+        //        MeasureFlapQualities[i].returnFlapScore += HandleScores;
+        //    }
+        //}
+
+
         for (int i = 0; i < MeasureFlapQualities.Length; i++)
         {
             MeasureFlapQualities[i].StartFlapMeasument(result, i);
