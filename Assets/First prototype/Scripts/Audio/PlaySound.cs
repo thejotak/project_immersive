@@ -1,0 +1,232 @@
+using System.Net.NetworkInformation;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PlaySound : MonoBehaviour
+{
+    [SerializeField] BirdAnimationManager animationManager;
+
+    [Header("------Audio Source------")]
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource SFXSource;
+    [SerializeField] AudioSource BirdSource;
+
+    [Header("------Audio Clip------")]
+    public AudioClip Intro;
+    public AudioClip Goodflap;
+    public AudioClip Badflap1;
+    public AudioClip Badflap2;
+    public AudioClip Badflap3;
+    public AudioClip Flamingofetisch;
+    public AudioClip Goodflamingo;
+    public AudioClip Badflamingo;
+    public AudioClip Sing4baby;
+    public AudioClip Singgood;
+    public AudioClip Singgoodgood;
+    public AudioClip Singgoodbad;
+    public AudioClip Singbad;
+    public AudioClip Singbadgood;
+    public AudioClip Singbadbad;
+    public AudioClip nostop1;
+    public AudioClip nostop2;
+    public AudioClip Fight;
+    public AudioClip Nofight;
+    public AudioClip Catcall1;
+    public AudioClip Catcall2;
+    public AudioClip Catcall3;
+    public AudioClip Catcall4;
+
+    [Header("------UI Icons------")]
+    public GameObject flapperP1;
+    public GameObject stilP1;
+    public GameObject flamingoP1;
+    public GameObject zingP1;
+    public GameObject flapperP2;
+    public GameObject stilP2;
+    public GameObject flamingoP2;
+    public GameObject zingP2;
+
+    private void Start()
+    {
+        flapperP1.SetActive(false);
+        stilP1.SetActive(false);
+        flamingoP1.SetActive(false);
+        zingP1.SetActive(false);
+
+        flapperP2.SetActive(false);
+        stilP2.SetActive(false);
+        flamingoP2.SetActive(false);
+        zingP2.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            BirdSource.PlayOneShot(Intro);
+
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            BirdSource.PlayOneShot(Goodflap);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            BirdSource.PlayOneShot(Badflap1);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            BirdSource.PlayOneShot(Badflap2);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            BirdSource.PlayOneShot(Badflap3);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            BirdSource.PlayOneShot(Catcall1);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            BirdSource.PlayOneShot(Catcall2);
+
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            BirdSource.PlayOneShot(Catcall3);
+
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            BirdSource.PlayOneShot(Catcall4);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            animationManager.ContinueFlapping();
+            BirdSource.PlayOneShot(nostop1);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            animationManager.ContinueFlapping();
+            BirdSource.PlayOneShot(nostop2);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            animationManager.BeSilent();
+            BirdSource.PlayOneShot(Flamingofetisch);
+
+            flamingoP1.SetActive(true);
+            flamingoP2.SetActive(true);
+
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            BirdSource.PlayOneShot(Goodflamingo);
+
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            BirdSource.PlayOneShot(Badflamingo);
+
+        }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            BirdSource.PlayOneShot(Fight);
+
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            BirdSource.PlayOneShot(Nofight);
+
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            animationManager.BeSilent();
+            BirdSource.PlayOneShot(Sing4baby);
+
+            zingP1.SetActive(true);
+            stilP2.SetActive(true);
+            flapperP2.SetActive(true);
+            flamingoP1.SetActive(false);
+            flamingoP2.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            BirdSource.PlayOneShot(Singgood);
+
+            zingP1.SetActive(false);
+            stilP1.SetActive(true);
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(false);
+            zingP2.SetActive(true);
+            stilP2.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            BirdSource.PlayOneShot(Singgoodbad);
+
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            BirdSource.PlayOneShot(Singgoodgood);
+
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            BirdSource.PlayOneShot(Singbad);
+
+            zingP1.SetActive(false);
+            stilP1.SetActive(true);
+            flapperP1.SetActive(true);
+            flapperP2.SetActive(false);
+            zingP2.SetActive(true);
+            stilP2.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            BirdSource.PlayOneShot(Singbadbad);
+
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            BirdSource.PlayOneShot(Singbadgood);
+
+            flapperP1.SetActive(true);
+            stilP1.SetActive(false);
+            flapperP2.SetActive(true);
+            zingP2.SetActive(false);
+        }
+    }
+}

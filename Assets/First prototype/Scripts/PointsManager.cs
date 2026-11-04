@@ -3,9 +3,13 @@ using UnityEngine.Events;
 
 public class PointsManager : MonoBehaviour
 {
+    public static PointsManager instance;
+
     public delegate void PlayerPointsChanged(int newAmount);
     public PlayerPointsChanged playerAPointsChanged;
     public PlayerPointsChanged playerBPointsChanged;
+
+    public GameManager gameManager;
 
     private int playerAPoints = 0;
     public int PlayerAPoints { 
@@ -29,17 +33,15 @@ public class PointsManager : MonoBehaviour
         }
     }
 
-    [SerializeField] PopupController popupController;
-    private PointsDisplay pointsDisplay;
+    [SerializeField] PointsPopupController pointsPopupController;
 
-
-    private void Start()
+    private void Awake()
     {
-        pointsDisplay = GetComponentInChildren<PointsDisplay>();
-        playerAPointsChanged += pointsDisplay.UpdatePointsText_pA;
-        playerBPointsChanged += pointsDisplay.UpdatePointsText_pB;
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
-
 
     // Update is called once per frame
     void Update()
@@ -50,47 +52,6 @@ public class PointsManager : MonoBehaviour
 
     private void DebugPointsInput()
     {
-        //if (Input.GetKey(KeyCode.Alpha1))
-        //{
-
-        //    if (Input.GetKeyDown(KeyCode.A))
-        //    {
-        //        AddPoints(10, "A");
-        //    } else if (Input.GetKeyDown(KeyCode.B))
-        //    {
-        //        AddPoints(10, "B");
-        //    }
-        //}
-
-        //else if (Input.GetKey(KeyCode.Alpha2))
-        //{
-        //    if (Input.GetKeyDown(KeyCode.A))
-        //    {
-        //        AddPoints(20, "A");
-        //    }
-        //    else if (Input.GetKeyDown(KeyCode.B))
-        //    {
-        //        AddPoints(20, "B");
-        //    }
-        //}
-
-        //else if (Input.GetKey(KeyCode.Alpha3))
-        //{
-        //    if (Input.GetKeyDown(KeyCode.A))
-        //    {
-        //        AddPoints(30, "A");
-        //    }
-        //    else if (Input.GetKeyDown(KeyCode.B))
-        //    {
-        //        AddPoints(30, "B");
-        //    }
-        //}
-
-        //else return;
-
-
-
-
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             AddPoints(10, "A");
@@ -101,7 +62,7 @@ public class PointsManager : MonoBehaviour
         }
     }
 
-    private void AddPoints(int points, string player)
+    public void AddPoints(int points, string player)
     {
         if (player == "A")
         {
@@ -109,7 +70,9 @@ public class PointsManager : MonoBehaviour
             print($"{points} points were added to player {player}");
             print($"player {player} now has {PlayerAPoints} points");
 
-            popupController.addPoints(points, player == "A");
+            if (gameManager.isP0Flamingo) points *= 2;
+
+            pointsPopupController.CreatePopup(points, player == "A");
         }
         else if (player == "B")
         {
@@ -117,7 +80,10 @@ public class PointsManager : MonoBehaviour
             print($"{points} points were added to player {player}");
             print($"player {player} now has {PlayerBPoints} points");
 
-            popupController.addPoints(points, player == "A");
+            if (gameManager.isP1Flamingo) points *= 2;
+
+
+            pointsPopupController.CreatePopup(points, player == "A");
 
         }
     }

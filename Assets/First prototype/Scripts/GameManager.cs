@@ -2,35 +2,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    WinScreen winScreen;
+    public bool shouldFlaming;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool isP0Flamingo;
+    public bool isP1Flamingo;
+
+    private void Update()
     {
-        winScreen = GetComponentInChildren<WinScreen>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        CheckForGameEnd();
-    }
-
-
-    private void CheckForGameEnd()
-    {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                print(" Player A wins!");
-                winScreen.PlayerAWins();
-            } 
-            else if (Input.GetKeyDown(KeyCode.B))
-            {
-                print(" Player B wins!");
-                winScreen.PlayerBWins();
-            }
+            isP0Flamingo = !isP0Flamingo;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            isP1Flamingo = !isP1Flamingo;
         }
     }
 }
