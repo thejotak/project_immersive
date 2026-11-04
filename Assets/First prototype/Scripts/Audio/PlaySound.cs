@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,7 +46,10 @@ public class PlaySound : MonoBehaviour
     public GameObject stilP2;
     public GameObject flamingoP2;
     public GameObject zingP2;
-
+    public GameObject EiNaarSpeler2;
+    public GameObject UitroeptekensL;
+    public GameObject UitroeptekensR;
+    bool coroutineIsFinished = true;
     private void Start()
     {
         flapperP1.SetActive(false);
@@ -57,6 +61,10 @@ public class PlaySound : MonoBehaviour
         stilP2.SetActive(false);
         flamingoP2.SetActive(false);
         zingP2.SetActive(false);
+
+        EiNaarSpeler2.SetActive(false);
+        UitroeptekensL.SetActive(false);
+        UitroeptekensR.SetActive(false);
     }
 
     // Update is called once per frame
@@ -180,7 +188,18 @@ public class PlaySound : MonoBehaviour
             flapperP2.SetActive(false);
             zingP2.SetActive(true);
             stilP2.SetActive(false);
-        }
+
+            if (coroutineIsFinished)
+            {
+                StartCoroutine("ActiveAndDeactivate");
+            }
+            else
+            {
+                StopCoroutine("ActiveAndDeactivate");
+                StartCoroutine("ActiveAndDeactivate");
+            }
+        } 
+
         if (Input.GetKeyDown(KeyCode.V))
         {
             BirdSource.PlayOneShot(Singgoodbad);
@@ -229,4 +248,23 @@ public class PlaySound : MonoBehaviour
             zingP2.SetActive(false);
         }
     }
+
+    IEnumerator ActiveAndDeactivate()
+    {
+    coroutineIsFinished = false;             
+    EiNaarSpeler2.SetActive(true);
+    UitroeptekensL.SetActive(true);
+    UitroeptekensR.SetActive(true);
+
+    yield return new WaitForSeconds(15.1f); 
+
+    EiNaarSpeler2.SetActive(false);
+    UitroeptekensL.SetActive(false);
+    UitroeptekensR.SetActive(false);
+    coroutineIsFinished = true;
+
+    }
+
+
 }
+
