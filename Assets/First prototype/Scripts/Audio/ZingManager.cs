@@ -21,6 +21,8 @@ public class ZingManager : MonoBehaviour
     // Score
     public PointsManager pointsManager;
 
+    [SerializeField] BirdAnimationManager birdAnimationManager;
+
     // -------------------------
     // AUDIO BAR
     // -------------------------
@@ -95,6 +97,8 @@ public class ZingManager : MonoBehaviour
 
         Debug.Log("Ronde van speler A gestart!");
 
+        birdAnimationManager.ListenLeft();
+
         float timer = switchTime;
 
         while (timer > 0f)
@@ -115,13 +119,15 @@ public class ZingManager : MonoBehaviour
         // -------------------------
 
         player1Active = false;
-
+        
         if (audioBar != null)
         {
             audioBar.anchoredPosition = playerBBarPosition;
         }
 
         Debug.Log("Ronde van speler B gestart!");
+
+        birdAnimationManager.ListenRight();
 
         timer = switchTime;
 
@@ -152,6 +158,8 @@ public class ZingManager : MonoBehaviour
         {
             audioBar.gameObject.SetActive(false);
         }
+
+        birdAnimationManager.StopListening();
 
         roundActive = false;
         zingStageActive = false;

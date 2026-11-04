@@ -56,7 +56,7 @@ public class ProgressionBarManager : MonoBehaviour
         if (distribution >= 0.2f)
 
             {
-                Debug.Log("Bluebird is sad");
+                //Debug.Log("Bluebird is sad");
                 
                 NeutralBlueBird.SetActive(false);
                 SadBlueBird.SetActive(true);
@@ -68,7 +68,7 @@ public class ProgressionBarManager : MonoBehaviour
             }
         else if (distribution <= -0.2f) 
             {
-                Debug.Log("Redbird is sad");
+                //Debug.Log("Redbird is sad");
                 SadBlueBird.SetActive(false);
                 NeutralBlueBird.SetActive(true);
                 NeutralRedBird.SetActive(false);
@@ -79,7 +79,7 @@ public class ProgressionBarManager : MonoBehaviour
             }
         else
         {
-                Debug.Log("Both Bitch Birds Neutral");
+                //Debug.Log("Both Bitch Birds Neutral");
                 SadBlueBird.SetActive(false);
                 NeutralBlueBird.SetActive(true);
                 NeutralRedBird.SetActive(true);
