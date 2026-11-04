@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/First prototype/Scenes/TitleScreen.unity
     guid: d1064ed747a816e45b1ec6704f8d8c1e
   - enabled: 1
-    path: Assets/First prototype/Scenes/IntroVideo.unity
+    path: Assets/First prototype/Scenes/Intro.unity
     guid: 681d3adb1987e8948bac0a8f327ebec7
   - enabled: 1
     path: Assets/First prototype/Scenes/FirstPrototype.unity
