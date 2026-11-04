@@ -19,7 +19,7 @@ public class FillFromMicrophone : MonoBehaviour
     public float screamThreshold = 0.8f;
 
     // Punten voor iedere keer dat de threshold overschreden wordt
-    public int pointsPerScream = 10;
+    public int pointsPerScream = 2;
 
     // Houdt bij of we al boven de threshold zitten
     private bool aboveThreshold = false;
