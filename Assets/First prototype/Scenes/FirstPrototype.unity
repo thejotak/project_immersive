@@ -493,6 +493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 138691084}
+  - component: {fileID: 138691085}
   m_Layer: 5
   m_Name: P1Icons
   m_TagString: Untagged
@@ -523,6 +524,21 @@ RectTransform:
   m_AnchoredPosition: {x: 177, y: 195}
   m_SizeDelta: {x: 130.90002, y: 130.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &138691085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138691083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6098d1aa1a2cd53438d9c1c6a8cd452a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PulseToTheBeat
+  _useTestBeat: 0
+  _pulseSize: 1.03
+  _returnSpeed: 5
 --- !u!1 &173288348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,6 +3347,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - steps: 0.75
+    trigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 138691085}
+          m_TargetAssemblyTypeName: PulseToTheBeat, Assembly-CSharp
+          m_MethodName: Pulse
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1642189289}
+          m_TargetAssemblyTypeName: PulseToTheBeat, Assembly-CSharp
+          m_MethodName: Pulse
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1458383853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,6 +3569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1642189288}
+  - component: {fileID: 1642189289}
   m_Layer: 5
   m_Name: P2Icons
   m_TagString: Untagged
@@ -3555,6 +3600,21 @@ RectTransform:
   m_AnchoredPosition: {x: -177, y: 195}
   m_SizeDelta: {x: 130.90002, y: 130.90002}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1642189289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642189287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6098d1aa1a2cd53438d9c1c6a8cd452a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PulseToTheBeat
+  _useTestBeat: 0
+  _pulseSize: 1.03
+  _returnSpeed: 5
 --- !u!1 &1645049742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4019848533407530721, guid: 002daa36f32de2f468079967f569cc94, type: 3}
