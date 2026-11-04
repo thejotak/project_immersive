@@ -2053,6 +2053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MediaPipe
       objectReference: {fileID: 0}
+    - target: {fileID: 3488002031838133367, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
+      propertyPath: m_TargetDisplay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5910600876834596564, guid: 308a76bf19c12f7448f00fe0da7580c3, type: 3}
       propertyPath: _contents
       value: 
@@ -4287,6 +4291,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2505859563049781737, guid: 002daa36f32de2f468079967f569cc94, type: 3}
+      propertyPath: m_TargetDisplay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505859563049781737, guid: 002daa36f32de2f468079967f569cc94, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.6132076
       objectReference: {fileID: 0}
@@ -4574,7 +4582,7 @@ Canvas:
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
 --- !u!1 &1019062321804459301
 GameObject:
   m_ObjectHideFlags: 0

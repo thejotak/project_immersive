@@ -8,11 +8,6 @@ public class GameManager : MonoBehaviour
     public bool isP1Flamingo;
 
 
-    private void Awake()
-    {
-        Display.displays[1].Activate();
-    }
-
 
     private void Update()
     {
